@@ -2,6 +2,14 @@
     background-color: #3b6bf0;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+  }
+  
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -87,29 +95,10 @@ nav ul li a:not(.active):hover {
     background-color:#172554 ;
 }
 
-nav .menu {
-    display: none;
-    position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
-}
-
-nav .menu span {
-    height: 0.4rem;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 0.2rem;
-}
 
 
 @media (max-width: 480px) {
-    nav .menu {
-        display: flex;
-    }
+
 
     nav {
         flex-direction: column;
